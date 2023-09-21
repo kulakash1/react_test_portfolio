@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<link rel="stylesheet" href="Achievements.css" />
+    <script src="Achievements.js" defer></script>
+
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/d1c2ea8b80.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <!-- <nav class="navbar navbar-dark nav-Bg">
+    
+        <a class="navbar-brand navBtn" href="#">AK</a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav ml-auto">
+                <a class="nav-link active text-white" href="#">
+                    Home
+                    <span class="sr-only">(current)</span>
+                </a>
+                <a class="nav-link text-white" href="#">About me</a>
+                <a class="nav-link text-white" href="#">Projects</a>
+                <a class="nav-link text-white" href="#">Recent Blogs</a>
+                <a class="nav-link text-white" href="#">Testimonial</a>
+            </div>
+        </div>
+    </nav> -->
+
+    <nav class="navbar navbar-expand-lg navbar-dark nav-Bg">
+        <a class="navbar-brand navBtn" href="#">
+            
+            AK
+            <!-- <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/food-munch-logo-img.png" class="navbar-image" alt="" /> -->
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav ml-auto">
+                <a class="nav-link active " href="/index.html">HOME <span class="sr-only">(current)</span></a>
+                <a class="nav-link active" href="/About/About.html">ABOUT<span class="sr-only">(current)</span></a>
+                <a class="nav-link active" href="/Travel Diary/Travel Diary.html">TRAVEL DIARY<span class="sr-only">(current)</span></a>
+                <a class="nav-link active" href="/Achievements/Achievements.html">ACHIEVEMENTS<span class="sr-only">(current)</span></a>
+                <a class="nav-link active" href="/Projects/projectsPage.html">PROJECTS <span class="sr-only">(current)</span></a>
+                <a class="nav-link active" href="/Contact Me/Contact Me.html">CONTACT ME <span class="sr-only">(current)</span></a>
+            </div>
+        </div>
+    </nav>
+
+
+<!--=============== ACHIEVEMENTS ===============-->
+    <!-- <div class="about-me-section pt-5 pb-5">
+
+        <div class="container">
+            <div class="row">
+                <div class="d-flex flex-column justify-content-center col-12 col-md-6 order-md-2">
+                    <h1 class="main-point mb-3">"Success is not the destination, but the journey itself."</h1>
+                    <h1 class="about-me-section-heading mb-3">This Page is Under Construction.</h1>
+                    <img src="under construction.jpg" class="about-me-section-image d-md-none mb-3" />
+                    <p class="description">Description </p>
+                </div>
+
+                <div class="col-12 col-md-6 order-1 order-md-1 d-none d-md-block">
+                    <img src="under construction.jpg" class="about-me-section-image" />
+
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+
+    <!-- ... (Previous HTML code remains the same) ... -->
+
+<main>
+    <section class="achievement-section">
+        <h2>Earned Certificates</h2>
+        <h3>Full Stack Web Development</h3>
+        <div class="certificate-container">
+            <div class="certificate" onclick="showCertificateDetails('Build Your Own Static Website', 'February 8, 2022', 'Web Development.', '55+ Hrs', '/Achievements/Certificates/Full Stack Web Development/Build Your Own Static Website.jpg', 'https://10xiitian.ccbp.in/certificate/ZSKZRZNPMD')">
+                <img src="/Achievements/Certificates/Full Stack Web Development/Build Your Own Static Website.jpg" alt="Certificate 1">
+                <h3>Build Your Own Static Website</h3>
+                <p>Issue Date: February 8, 2022</p>
+                <p>Description: Web Development.</p>
+                <p>Duration: 55+ Hrs</p>
+            </div>
+            <!-- Add more Web Dev certificates as needed -->
+            
+            <div class="certificate" onclick="showCertificateDetails('Build Your Own Responsive Website', 'July 7, 2023', 'Web Development.', '56+ Hrs', '/Achievements/Certificates/Full Stack Web Development/Build Your Own Responsive Website.jpg', 'https://10xiitian.ccbp.in/certificate/OMURCWPYQZ')">
+                <img src="/Achievements/Certificates/Full Stack Web Development/Build Your Own Responsive Website.jpg" alt="Certificate 2">
+                <h3>Build Your Own Responsive Website</h3>
+                <p>Issue Date: July 7, 2023</p>
+                <p>Description: Web Development.</p>
+                <p>Duration: 56+ Hrs</p>
+            </div>
+
+            <div class="certificate" onclick="showCertificateDetails('Build Your Own Dynamic Web Application', 'July 10, 2023', 'Web Development.', '104+ Hrs', '/Achievements/Certificates/Full Stack Web Development/Build Your Own Dynamic Web Application.jpg', 'https://10xiitian.ccbp.in/certificate/WUUZUWTUHT')">
+                <img src="/Achievements/Certificates/Full Stack Web Development/Build Your Own Dynamic Web Application.jpg" alt="Certificate 3">
+                <h3>Build Your Own Dynamic Web Application</h3>
+                <p>Issue Date: July 10, 2023</p>
+                <p>Description: Web Development.</p>
+                <p>Duration: 104+ Hrs</p>
+            </div>
+
+            <div class="certificate" onclick="showCertificateDetails('JavaScript Essentials', 'July 29, 2023', 'Web Development.', '46+ Hrs', '/Achievements/Certificates/Full Stack Web Development/JavaScript Essentials.jpg', 'https://10xiitian.ccbp.in/certificate/CZVNCEDFXF')">
+                <img src="/Achievements/Certificates/Full Stack Web Development/JavaScript Essentials.jpg" alt="Certificate 4">
+                <h3>JavaScript Essentials</h3>
+                <p>Issue Date: July 29, 2023</p>
+                <p>Description: Web Development.</p>
+                <p>Duration: 46+ Hrs</p>
+            </div>
+
+            <div class="certificate" onclick="showCertificateDetails('Introduction to Databases', 'August 8, 2023', 'Web Development.', '56+ Hrs', '/Achievements/Certificates/Full Stack Web Development/Introduction to Databases.jpg', 'https://10xiitian.ccbp.in/certificate/IPZEPHJTED')">
+                <img src="/Achievements/Certificates/Full Stack Web Development/Introduction to Databases.jpg" alt="Certificate 5">
+                <h3>Introduction to Databases</h3>
+                <p>Issue Date: August 8, 2023</p>
+                <p>Description: Web Development.</p>
+                <p>Duration: 56+ Hrs</p>
+            </div>
+
+            <div class="certificate" onclick="showCertificateDetails('Responsive Web Design using Flexbox', 'September 16, 2023', 'Web Development.', '42+ Hrs', '/Achievements/Certificates/Full Stack Web Development/Responsive Web Design using Flexbox.jpg', 'https://10xiitian.ccbp.in/certificate/CFYRPSNPVN')">
+                <img src="/Achievements/Certificates/Full Stack Web Development/Responsive Web Design using Flexbox.jpg" alt="Certificate 6">
+                <h3>Responsive Web Design using Flexbox</h3>
+                <p>Issue Date: September 16, 2023</p>
+                <p>Description: Web Development.</p>
+                <p>Duration: 42+ Hrs</p>
+            </div>
+
+            <div class="certificate" onclick="showCertificateDetails('Node JS', 'September 19, 2023', 'Web Development.', '42+ Hrs', '/Achievements/Certificates/Full Stack Web Development/Node JS.jpg', 'https://10xiitian.ccbp.in/certificate/QUIOYCPWZH')">
+                <img src="/Achievements/Certificates/Full Stack Web Development/Node JS.jpg" alt="Certificate 7">
+                <h3>Node JS</h3>
+                <p>Issue Date: September 19, 2023</p>
+                <p>Description: Web Development.</p>
+                <p>Duration: 42+ Hrs</p>
+            </div>
+
+            <!-- <div class="certificate" onclick="showCertificateDetails('React JS - Getting started', 'September 22, 2023', 'Web Development.', '42+ Hrs', '/Achievements/Certificates/Full Stack Web Development/React JS - Getting started.jpg', 'ht')">
+                <img src="/Achievements/Certificates/Full Stack Web Development/React JS - Getting started.jpg" alt="Certificate 8">
+                <h3>React JS - Getting started</h3>
+                <p>Issue Date: September 22, 2023</p>
+                <p>Description: Web Development.</p>
+                <p>Duration: 42+ Hrs</p>
+            </div> -->
+        </div>
+
+        <h3>Programming Language</h3>
+        <div class="certificate-container">
+            <div class="certificate-container">
+                <div class="certificate" onclick="showCertificateDetails('Python & OOP Concepts', 'February 12, 2022', 'Python Concepts.', '57+ Hrs', '/Achievements/Certificates/Programming Language/Python & OOP Concepts.jpg', 'https://10xiitian.ccbp.in/certificate/EXSGOWJFSE')">
+                    <img src="/Achievements/Certificates/Programming Language/Python & OOP Concepts.jpg" alt="Certificate 1">
+                    <h3>Python & OOP Concepts</h3>
+                    <p>Issue Date: February 12, 2022</p>
+                    <p>Description: Python Concepts.</p>
+                    <p>Duration: 57+ Hrs</p>
+                </div>
+                <!-- Add more Competi certificates as needed -->
+                <div class="certificate" onclick="showCertificateDetails('C++ and Foundations of STL', 'October 9, 2022', 'C++.', '15+ Hrs', '/Achievements/Certificates/Programming Language/C++ and Foundations of STL.jpg', 'https://10xiitian.ccbp.in/certificate/VWQJVAFLJA')">
+                    <img src="/Achievements/Certificates/Programming Language/C++ and Foundations of STL.jpg" alt="Certificate 3"> <!-- Changed alt attribute to "Certificate 3" -->
+                    <h3>C++ and Foundations of STL</h3>
+                    <p>Issue Date: October 9, 2022</p>
+                    <p>Description: C++.</p>
+                    <p>Duration: 15+ Hrs</p>
+                </div>
+            </div>
+        </div>
+
+        <h3>Competitive Programming</h3>
+        <div class="certificate-container">
+            <div class="certificate-container">
+                <div class="certificate" onclick="showCertificateDetails('Elementary Data Structures and Algorithms', 'February 13, 2022', 'DSA Fundamentals.', '29+ Hrs', '/Achievements/Certificates/Competitive Programming/Elementary Data Structures and Algorithms.jpg', 'https://10xiitian.ccbp.in/certificate/ZHXOQGMJWU')">
+                    <img src="/Achievements/Certificates/Competitive Programming/Elementary Data Structures and Algorithms.jpg" alt="Certificate 2">
+                    <h3>Elementary Data Structures and Algorithms</h3>
+                    <p>Issue Date: February 13, 2022</p>
+                    <p>Description: DSA Fundamentals.</p>
+                    <p>Duration: 29+ Hrs</p>
+                </div>
+                <!-- Add more Competi certificates as needed -->
+                <div class="certificate" onclick="showCertificateDetails('C++ and Foundations of STL', 'October 9, 2022', 'C++.', '15+ Hrs', '/Achievements/Certificates/Competitive Programming/C++ and Foundations of STL.jpg', 'https://10xiitian.ccbp.in/certificate/VWQJVAFLJA')">
+                    <img src="/Achievements/Certificates/Competitive Programming/C++ and Foundations of STL.jpg" alt="Certificate 3"> <!-- Changed alt attribute to "Certificate 3" -->
+                    <h3>C++ and Foundations of STL</h3>
+                    <p>Issue Date: October 9, 2022</p>
+                    <p>Description: C++.</p>
+                    <p>Duration: 15+ Hrs</p>
+                </div>
+            </div>
+        </div>
+
+        
+        <h3>Corporate Compliance</h3>
+        <div class="certificate-container">
+            <div class="certificate-container">
+                <div class="certificate" onclick="showCertificateDetailsType2('Corporate Etiquette', 'May 5, 2022', 'Corporate Training.', 'E-202205-176223', '/Achievements/Certificates/Corporate Compliance/Corporate Etiquette.jpg', 'Learning and Development')">
+                    <img src="/Achievements/Certificates/Corporate Compliance/Corporate Etiquette.jpg" alt="Certificate 1">
+                    <h3>Corporate Etiquette</h3>
+                    <p>Issue Date: May 5, 2022</p>
+                    <p>Description: Corporate Training.</p>
+                    <p>Certification No.: E-202205-176223</p>
+                </div>
+                <!-- Add more Competi certificates as needed -->
+                <div class="certificate" onclick="showCertificateDetailsType2('Business Ethics', 'May 9, 2022', 'Corporate Training.', 'E-202205-176750', '/Achievements/Certificates/Corporate Compliance/Business Ethics.jpg', 'Learning and Development')">
+                    <img src="/Achievements/Certificates/Corporate Compliance/Business Ethics.jpg" alt="Certificate 2">
+                    <h3>Business Ethics</h3>
+                    <p>Issue Date: May 9, 2022</p>
+                    <p>Description: Corporate Training.</p>
+                    <p>Certification No.: E-202205-176750</p>
+                </div>
+
+                <div class="certificate" onclick="showCertificateDetailsType2('NBSO', 'May 9, 2022', 'Corporate Training.', 'E-202205-176744', '/Achievements/Certificates/Corporate Compliance/NBSO.jpg', 'Learning and Development')">
+                    <img src="/Achievements/Certificates/Corporate Compliance/NBSO.jpg" alt="Certificate 3">
+                    <h3>NBSO</h3>
+                    <p>Issue Date: May 9, 2022</p>
+                    <p>Description: Corporate Training.</p>
+                    <p>Certification No.: E-202205-176744</p>
+                </div>
+
+                <div class="certificate" onclick="showCertificateDetailsType2('POSH', 'May 9, 2022', 'Corporate Training.', 'E-202205-176747', '/Achievements/Certificates/Corporate Compliance/POSH.jpg', 'Learning and Development')">
+                    <img src="/Achievements/Certificates/Corporate Compliance/POSH.jpg" alt="Certificate 4">
+                    <h3>POSH</h3>
+                    <p>Issue Date: May 9, 2022</p>
+                    <p>Description: Corporate Training.</p>
+                    <p>Certification No.: E-202205-176747</p>
+                </div>
+            </div>
+        </div>
+
+        
+    </section>
+</main>
+
+<!-- ... (Remaining HTML code remains the same) ... -->
+<div class="modal" id="certificateModal">
+    <div class="modal-content">
+        <span class="close-button" onclick="closeModal()">&times;</span>
+        <div id="modalContent">
+            <!-- Certificate details will be dynamically added here -->
+            <!-- <img id="fullCertificateImg" src="" alt="Full Certificate Image"> -->
+        </div>
+    </div>
+</div>
+    
+
+
+
+
+
+    <!-- ... (Previous HTML code remains the same) ... -->
+
+    <!-- <div class="modal" id="certificateModal">
+        <div class="modal-content">
+          <span class="close-button" onclick="closeModal()">&times;</span>
+          <div id="modalContent">
+            <img id="fullCertificateImage" src="" alt="Full Certificate Image">
+          </div>
+        </div>
+      </div> -->
+      
+    
+
+<!-- ... (Remaining HTML code remains the same) ... -->
+
+      <!-- NEED TO UPDATE !-->
+      <!-- 
+        <div class="modal" id="certificateModal">
+        <div class="modal-content">
+          <span class="close-button" onclick="closeModal()">&times;</span>
+          <div id="modalContent">
+            Certificate details will be dynamically added here
+          </div>
+        </div>
+      </div> 
+    -->
+
+
+    
+</body>
+
+</html>
