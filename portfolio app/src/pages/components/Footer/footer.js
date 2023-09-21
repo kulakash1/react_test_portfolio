@@ -3,6 +3,10 @@ import "https://kit.fontawesome.com/15696a5f7b.js";
 // import { icon } from '@fortawesome/fontawesome-svg-core/import.macro'
 // import 'https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap'
 
+
+// import { profileImage } from "../../components/assets/Content/profileImage.js";
+// const { id, home, imageName, link } = profileImage;
+
 const Footer = () => {
   return (
     // <!-- Footer Latest -->
@@ -12,8 +16,18 @@ const Footer = () => {
           <div className="col-12 col-md-6 col-lg-3">
             <div className="text-center text-md-left">
               <img
+<<<<<<< HEAD
                 src={require("../assets/image/Profile Pic/home/ProfileImg.jpeg")}
                 alt="Developer PIC"
+=======
+                src={require("../assets/image/Profile Pic/home/Profile Img.jpeg")}
+                // src={require("../a")}
+                // src={require({link})}
+                // src={link}
+                // src={require(`${link}`).default}
+                // alt={imageName}
+                alt="Profile Pic"
+>>>>>>> 60aaf76c0f58f532bc8b28e978476b688f97adaf
                 className="footer-section-image"
               />
               <div className="d-flex flex-row justify-content-center justify-content-md-start mt-3 mb-3">

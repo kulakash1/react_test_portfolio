@@ -8,6 +8,72 @@ import "bootstrap/dist/css/bootstrap.css";
 // import {Link} from 'react-router-dom';
 import Navbar1 from "../components/Navbar/navbar.js";
 
+// // JS Code
+
+// // JavaScript for filter functionality
+// const filterInput = document.getElementById("filter");
+// const skillsList = document.querySelector(".skills-list");
+
+// filterInput.addEventListener("input", function () {
+//   const searchTerm = filterInput.value.toLowerCase();
+//   const skills = Array.from(skillsList.children);
+
+//   skills.forEach((skill) => {
+//     const skillName = skill.textContent.toLowerCase();
+//     if (skillName.includes(searchTerm)) {
+//       skill.style.display = "inline-block";
+//     } else {
+//       skill.style.display = "none";
+//     }
+//   });
+// });
+
+// // To check
+// // JavaScript for smooth scrolling when clicking on navigation links
+// $(document).ready(function () {
+//   $("a").on("click", function (event) {
+//       if (this.hash !== "") {
+//           event.preventDefault();
+//           var hash = this.hash;
+//           $("html, body").animate(
+//               {
+//                   scrollTop: $(hash).offset().top,
+//               },
+//               800,
+//               function () {
+//                   window.location.hash = hash;
+//               }
+//           );
+//       }
+//   });
+// });
+
+// ... Existing JavaScript code ...
+
+// // Function to display the contact popup
+// function openContactPopup() {
+//   var popup = document.getElementById("contact-popup");
+//   popup.style.display = "block";
+// }
+
+// // Function to close the contact popup
+// function closeContactPopup() {
+//   var popup = document.getElementById("contact-popup");
+//   popup.style.display = "none";
+// }
+
+// // Function to toggle visibility of the education and skills sections
+// function toggleSectionVisibility(sectionId) {
+//   var section = document.getElementById(sectionId);
+//   if (section.style.display === "none") {
+//     section.style.display = "block";
+//   } else {
+//     section.style.display = "none";
+//   }
+// }
+
+// ... Remaining JavaScript code ...
+
 const About = () => {
   return (
     <div className="">
@@ -15,17 +81,20 @@ const About = () => {
       <Navbar1 />
 
       {/*  <!--=============== About ===============--> */}
-      <div class="about-me-section pt-5 pb-5">
-        <div class="container">
-          <div class="row">
-            <div class="d-flex flex-column justify-content-center col-12 col-md-6 order-md-2">
-              <h1 class="main-point mb-3">Facts</h1>
-              <h1 class="about-me-section-heading mb-3">About me</h1>
+      <div className="about-me-section pt-5 pb-5">
+        <div className="container">
+          <div className="row">
+            <div className="d-flex flex-column justify-content-center col-12 col-md-6 order-md-2">
+              <h1 className="main-point mb-3">Facts</h1>
+              <h1 className="about-me-section-heading mb-3">About me</h1>
               <img
-                src="/Profile Img.jpeg" alt="Profile"
-                class="about-me-section-image d-md-none mb-3"
+                src={require("../components/assets/image/Profile Pic/home/Profile Img.jpeg")}
+                // src={require({link})}
+                // alt={imageName}
+                alt="Profile Pic"
+                className="about-me-section-image d-md-none mb-3"
               />
-              <p class="description">
+              <p className="description">
                 Hello! I'm Akash Kulshrestha, a passionate technologist and 2023
                 graduate from IIT Dhanbad with a BTech degree in Computer
                 Science and Engineering. As a tech enthusiast, I have a strong
@@ -41,15 +110,21 @@ const About = () => {
               </p>
             </div>
 
-            <div class="col-12 col-md-6 order-1 order-md-1 d-none d-md-block">
-              <img src="/Profile Img.jpeg" alt ="Profile" class="about-me-section-image" />
+            <div className="col-12 col-md-6 order-1 order-md-1 d-none d-md-block">
+              <img
+                src={require("../components/assets/image/Profile Pic/home/Profile Img.jpeg")}
+                // src={require({link})}
+                // alt={imageName}
+                alt="Profile Pic"
+                className="about-me-section-image"
+              />
             </div>
           </div>
         </div>
 
         {/* <!-- About Me Education & Skills Section --> */}
         <main>
-          <section class="education">
+          <section className="education">
             <h2>Education</h2>
             <ul>
               <li>
@@ -70,13 +145,17 @@ const About = () => {
               </li>
             </ul>
           </section>
-          <section class="skills">
+          <section className="skills">
             <h2>Skills</h2>
-            <div class="skills-filter">
+            <div className="skills-filter">
               <label for="filter">Filter Skills:</label>
-              {/* <input type="text" id="filter" placeholder="Type to filter skills..."> */}
+              <input
+                type="text"
+                id="filter"
+                placeholder="Type to filter skills..."
+              />
             </div>
-            <ul class="skills-list">
+            <ul className="skills-list">
               <li>HTML</li>
               <li>CSS</li>
               <li>JavaScript</li>
@@ -105,78 +184,3 @@ const About = () => {
 
 export default About;
 // export { About };
-
-
-
-
-
-
-
-
-
-
-// JS Code
-
-// // JavaScript for filter functionality
-// const filterInput = document.getElementById("filter");
-// const skillsList = document.querySelector(".skills-list");
-
-// filterInput.addEventListener("input", function () {
-//   const searchTerm = filterInput.value.toLowerCase();
-//   const skills = Array.from(skillsList.children);
-
-//   skills.forEach((skill) => {
-//     const skillName = skill.textContent.toLowerCase();
-//     if (skillName.includes(searchTerm)) {
-//       skill.style.display = "inline-block";
-//     } else {
-//       skill.style.display = "none";
-//     }
-//   });
-// });
-
-// // // To check
-// // // JavaScript for smooth scrolling when clicking on navigation links
-// // $(document).ready(function () {
-// //   $("a").on("click", function (event) {
-// //       if (this.hash !== "") {
-// //           event.preventDefault();
-// //           var hash = this.hash;
-// //           $("html, body").animate(
-// //               {
-// //                   scrollTop: $(hash).offset().top,
-// //               },
-// //               800,
-// //               function () {
-// //                   window.location.hash = hash;
-// //               }
-// //           );
-// //       }
-// //   });
-// // });
-
-// // ... Existing JavaScript code ...
-
-// // Function to display the contact popup
-// function openContactPopup() {
-//   var popup = document.getElementById("contact-popup");
-//   popup.style.display = "block";
-// }
-
-// // Function to close the contact popup
-// function closeContactPopup() {
-//   var popup = document.getElementById("contact-popup");
-//   popup.style.display = "none";
-// }
-
-// // Function to toggle visibility of the education and skills sections
-// function toggleSectionVisibility(sectionId) {
-//   var section = document.getElementById(sectionId);
-//   if (section.style.display === "none") {
-//       section.style.display = "block";
-//   } else {
-//       section.style.display = "none";
-//   }
-// }
-
-// // ... Remaining JavaScript code ...
