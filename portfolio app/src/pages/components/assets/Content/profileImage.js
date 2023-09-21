@@ -1,10 +1,12 @@
 let count = 1;
-
+const baseUrl = "../components/assets/image/Profile Pic/home/";
+const img="ProfileImg.jpg"
 const profileImage = {
     id: count++,
     home: "home",
-    imageName: "Profile Pic",
-    link: "../../../components/assets/image/Profile Pic/home/profile Img.jpeg",
+    imageName: "Profile ",
+    link: "ProfileImg.jpeg",
+    name:"../components/assets/image/Profile Pic/home/ProfileImg.jpeg"
    
 //   {
 //     id: count++,
@@ -20,6 +22,6 @@ const profileImage = {
 //     img: "https://picsum.photos/400/?grayscale",
 //     link: "#",
 //   },
-};
+}
 
 export { profileImage };

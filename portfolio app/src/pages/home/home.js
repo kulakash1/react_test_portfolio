@@ -1,11 +1,12 @@
 import Navbar1 from "../components/Navbar/navbar.js";
 import Footer from "../components/Footer/footer.js";
 import "bootstrap/dist/css/bootstrap.css";
-
 import "./home.css";
 import React from "react";
 import {profileImage} from '../components/assets/Content/profileImage.js'
-const {id, home, imageName, link} = profileImage;
+import { useResolvedPath } from "react-router-dom";
+const {id, home, imageName, link,name} = profileImage;
+let m="../components/assets/image/Profile Pic/home/ProfileImg.jpeg"
 const Home = () => (
   <div className="">
     {/* NAVBAR */}
@@ -17,8 +18,7 @@ const Home = () => (
         <div className="row">
           <div className="col-12 col-md-5 order-1 order-md-2">
             <img
-              // src={require("../components/assets/image/home/Profile Img.jpeg")}
-              src={require({link})}
+              src={require(`../components/assets/image/Profile Pic/home/${link}`)}
               alt={imageName}
               className="profileImg"
             />

@@ -12,7 +12,7 @@ const Footer = () => {
           <div className="col-12 col-md-6 col-lg-3">
             <div className="text-center text-md-left">
               <img
-                src={require("../assets/image/home/Profile Img.jpeg")}
+                src={require("../assets/image/Profile Pic/home/ProfileImg.jpeg")}
                 alt="Developer PIC"
                 className="footer-section-image"
               />
