@@ -11,22 +11,16 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
-// import Home from './pages/home/home.js';
+
 import { BrowserRouter } from "react-router-dom";
 import { MainPageRoutes } from "./router/Router.js";
 // import reportWebVitals from './reportWebVitals';
-// import About from '../src/pages/About/About.js'
+
 const root = ReactDOM.createRoot(document.getElementById("root"));
-// root.render(
-//   <RoutePath />
-//     // <Home />
-// );
 
 root.render(
   <React.StrictMode>
     <BrowserRouter>
-      {/* <About /> */}
-      {/* <Home /> */}
       <MainPageRoutes />
     </BrowserRouter>
   </React.StrictMode>
