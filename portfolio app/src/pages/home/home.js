@@ -4,8 +4,9 @@ import "bootstrap/dist/css/bootstrap.css";
 
 import "./home.css";
 import React from "react";
-import {profileImage} from '../components/assets/Content/profileImage.js'
-const {id, home, imageName, link} = profileImage;
+// import {profileImage} from '../components/assets/Content/profileImage.js'
+// const {id, home, imageName, link} = profileImage;
+
 const Home = () => (
   <div className="">
     {/* NAVBAR */}
@@ -17,9 +18,10 @@ const Home = () => (
         <div className="row">
           <div className="col-12 col-md-5 order-1 order-md-2">
             <img
-              // src={require("../components/assets/image/home/Profile Img.jpeg")}
-              src={require({link})}
-              alt={imageName}
+              src={require("../components/assets/image/Profile Pic/home/Profile Img.jpeg")}
+              // src={require({link})}
+              // alt={imageName}
+              alt="Profile Pic"
               className="profileImg"
             />
           </div>
